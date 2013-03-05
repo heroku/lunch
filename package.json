@@ -1,0 +1,19 @@
+{
+  "name":    "ohirun",
+  "version": "0.0.1",
+
+  "dependencies": {
+    "async":           "0.1.x",
+    "coffee-script":   "1.2.x",
+    "express":         "2.5.x",
+    "jade":            "0.26.x",
+    "stylus":          "0.26.x",
+    "nib":             "0.4.x",
+    "ical":            "0.0.6",
+    "nodemon":         "0.6.18"
+  },
+  "engines": {
+    "node": "0.8.x",
+    "npm":  "1.2.x"
+  }
+}
