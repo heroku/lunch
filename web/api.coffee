@@ -25,8 +25,11 @@ app.helpers
     require("querystring").stringify(params)
 
 app.get "/", (req, res) ->
-  ohiru.getLunch((lunch)->
-    res.send(lunch)
+  ohiru.getLunches((lunches)->
+    if req.headers.accept and req.headers.accept.match("json")
+      res.send(lunches)
+    else
+      res.render "lunches.jade", {lunches: lunches}
   )
 
 module.exports = app

@@ -9,7 +9,7 @@ class Ohiru
   constructor: ->
     @lunchUrl = "http://www.google.com/calendar/ical/heroku.com_u7jak60ob03hhe8h79mdncs2a0%40group.calendar.google.com/public/basic.ics"
 
-  getLunch: (cb) ->
+  getLunches: (cb) ->
     ical.fromURL @lunchUrl, {}, (err, data) ->
 
       lunches = []

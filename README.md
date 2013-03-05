@@ -1,13 +1,17 @@
-Ohiru
+Lunch
 =====
 
-What's for lunch at Heroku?
+What's for lunch at Heroku this week? Find out at [lunch.herokuapp.com](http://lunch.herokuapp.com)
+or use the API:
+
+```sh
+curl -H 'Accept: application/json' http://lunch.herokuapp.com
+```
 
 Dev
 ----
 
 ```sh
-cp .env.sample .env
 npm install
 foreman start
 ```
