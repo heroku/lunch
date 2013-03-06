@@ -1,12 +1,19 @@
 !!! 5
 html(lang="en")
   head
-    title Lunch
+    title Ohiru | Lunch
     link(rel="stylesheet", href="/stylesheets/app.css")
 
     script(src="/javascripts/vendor/jquery-1.9.1.min.js")
     script(src="/javascripts/app.js")
 
   body
+    .header
+      a.suggestions(href="mailto:vibe+lunch@heroku.com") Suggestions
+
+      hgroup
+        h1 Ohiru
+        h2 A healthy mind and a healthy body
+
     .content
       != body
