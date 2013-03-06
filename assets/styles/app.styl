@@ -1,6 +1,6 @@
 box-reset()
-  margin: 0
-  padding: 0
+  margin 0
+  padding 0
 
 border-radius(radius)
   -moz-border-radius radius
@@ -13,6 +13,16 @@ transition(transition)
   -webkit-transition transition
   transition transition
 
+horizontal-line()
+  background-image -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, white), color-stop(10%, #d2d2d2), color-stop(90%, #d2d2d2), color-stop(100%, white))
+  background-image -webkit-linear-gradient(left, white, #d2d2d2 10%, #d2d2d2 90%, white)
+  background-image -moz-linear-gradient(left, white, #d2d2d2 10%, #d2d2d2 90%, white)
+  background-image -o-linear-gradient(left, white, #d2d2d2 10%, #d2d2d2 90%, white)
+  background-image linear-gradient(left, white, #d2d2d2 10%, #d2d2d2 90%, white)
+  background-position bottom center
+  background-repeat no-repeat
+  background-size 100% 1px
+
 *
   -moz-box-sizing border-box
   -webkit-box-sizing border-box
@@ -21,7 +31,7 @@ transition(transition)
 body
   box-reset()
   font-family "helvetica neue", helvetica, arial, geneva, sans-serif
-  font-size: 16px
+  font-size 16px
 
 .header
   padding 80px 0
@@ -80,13 +90,48 @@ body
     color white
 
 .lunches
-  margin 0 auto
-  max-width 840px
+  box-reset()
+  margin 40px auto
+  width 840px
 
   list-style none
 
   li
     overflow hidden
+    padding 20px 20px 21px
+
+    horizontal-line()
+
+    &:last-child
+      padding-bottom 20px
+
+      background-image none
+
+  .date
+    box-reset()
+    float left
+    margin 18px 40px 0 0
+    width 100px
+
+    color #554ea6
+    font-family "Proxima Nova"
+    font-size 1em
+    font-weight normal
+
+  .entry
+    float left
+    width 660px
+
+  .summary
+    box-reset()
+
+    color #8b8b8b
+    font-size 2.25em
+    font-weight 300
 
   .description
     display none
+
+  .active .summary
+    color black
+    font-weight 500

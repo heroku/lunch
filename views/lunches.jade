@@ -1,8 +1,7 @@
 ul.lunches
   each lunch in lunches
     li(class=(lunch.today ? "active" : ""))
-      .date
-        h3(title=moment(lunch.date).format("MMM D YYYY"))= moment(lunch.date).format('dddd')
+      h3.date(title=moment(lunch.date).format("MMM D YYYY"))= moment(lunch.date).format('dddd')
 
       .entry
         h2.summary= lunch.summary

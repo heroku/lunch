@@ -68,13 +68,54 @@ body {
   color: #fff;
 }
 .lunches {
-  margin: 0 auto;
-  max-width: 840px;
+  margin: 0;
+  padding: 0;
+  margin: 40px auto;
+  width: 840px;
   list-style: none;
 }
 .lunches li {
   overflow: hidden;
+  padding: 20px 20px 21px;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #fff), color-stop(10%, #d2d2d2), color-stop(90%, #d2d2d2), color-stop(100%, #fff));
+  background-image: -webkit-linear-gradient(left, #fff, #d2d2d2 10%, #d2d2d2 90%, #fff);
+  background-image: -moz-linear-gradient(left, #fff, #d2d2d2 10%, #d2d2d2 90%, #fff);
+  background-image: -o-linear-gradient(left, #fff, #d2d2d2 10%, #d2d2d2 90%, #fff);
+  background-image: linear-gradient(left, #fff, #d2d2d2 10%, #d2d2d2 90%, #fff);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+}
+.lunches li:last-child {
+  padding-bottom: 20px;
+  background-image: none;
+}
+.lunches .date {
+  margin: 0;
+  padding: 0;
+  float: left;
+  margin: 18px 40px 0 0;
+  width: 100px;
+  color: #554ea6;
+  font-family: "Proxima Nova";
+  font-size: 1em;
+  font-weight: normal;
+}
+.lunches .entry {
+  float: left;
+  width: 660px;
+}
+.lunches .summary {
+  margin: 0;
+  padding: 0;
+  color: #8b8b8b;
+  font-size: 2.25em;
+  font-weight: 300;
 }
 .lunches .description {
   display: none;
+}
+.lunches .active .summary {
+  color: #000;
+  font-weight: 500;
 }
