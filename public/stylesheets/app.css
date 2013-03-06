@@ -56,6 +56,7 @@ ul.lunches > li .entry h2 {
   color: #c2c2c2;
   margin: 0;
   padding: 0;
+  cursor: pointer;
 }
 li.active ul.lunches > li .entry h2 {
   color: #000;
@@ -68,6 +69,18 @@ ul.lunches > li .entry p {
   margin: 0;
   padding: 10px 0;
   font-weight: 400;
+  height: 0;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  display: block;
+}
+ul.lunches > li .entry p.active {
+  height: auto;
+  min-height: 100px;
+  opacity: 1;
 }
 ul.lunches > li.active .date h3 {
   color: #000;

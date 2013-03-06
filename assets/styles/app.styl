@@ -50,6 +50,7 @@ ul.lunches
         color #C2C2C2
         margin 0
         padding 0
+        cursor pointer
         li.active &
           color black
       p
@@ -60,11 +61,17 @@ ul.lunches
         margin 0
         padding 10px 0
         font-weight 400
-        // height: 0
-        // opacity: 0
+        height 0
+        opacity 0
+        -webkit-transition all 0.3s
+        -moz-transition all 0.3s
+        -o-transition all 0.3s
+        transition all 0.3s
+        display block
         &.active
-          // height: 300px
-          // opacity: 1
+          height auto
+          min-height 100px
+          opacity 1
     &.active
       .date
         h3
