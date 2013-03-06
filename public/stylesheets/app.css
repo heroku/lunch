@@ -43,10 +43,6 @@ body {
   font-weight: normal;
   letter-spacing: 6px;
 }
-.lunches {
-  margin: 0 auto;
-  max-width: 840px;
-}
 .suggestions {
   float: right;
   position: absolute;
@@ -70,4 +66,8 @@ body {
 .suggestions:hover {
   border-color: #fff;
   color: #fff;
+}
+.lunches {
+  margin: 0 auto;
+  max-width: 840px;
 }
