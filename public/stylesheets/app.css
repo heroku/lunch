@@ -115,6 +115,9 @@ body {
 .lunches .description {
   display: none;
 }
+.lunches .description.active {
+  display: block;
+}
 .lunches .active .summary {
   color: #000;
   font-weight: 500;
