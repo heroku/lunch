@@ -62,6 +62,10 @@ body {
   font-weight: bold;
   padding: 6px 10px;
   text-decoration: none;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .suggestions:hover {
   border-color: #fff;

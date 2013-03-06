@@ -7,6 +7,12 @@ border-radius(radius)
   -webkit-border-radius radius
   border-radius radius
 
+transition(transition)
+  -moz-transition transition
+  -o-transition transition
+  -webkit-transition transition
+  transition transition
+
 *
   -moz-box-sizing border-box
   -webkit-box-sizing border-box
@@ -73,6 +79,7 @@ body
   font-weight bold
   padding 6px 10px
   text-decoration none
+  transition(all 0.3s)
 
   &:hover
     border-color white
