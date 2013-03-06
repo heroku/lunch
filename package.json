@@ -10,6 +10,7 @@
     "stylus":          "0.26.x",
     "nib":             "0.4.x",
     "ical":            "0.0.6",
+    "moment":          "2.0.0",
     "nodemon":         "0.6.18"
   },
   "engines": {

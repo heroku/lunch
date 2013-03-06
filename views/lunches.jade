@@ -2,6 +2,10 @@ h1 Heroku Lunch
 
 ul.lunches
   each lunch in lunches
-    li
-      h2= lunch.summary
-      p= lunch.description
+    li(class=(moment(lunch.date).format('dddd') == moment().format('dddd') ? "active" : ""))
+      .date
+        h3= moment(lunch.date).format('dddd')
+        h4= moment(lunch.date).format("MMM D")
+      .entry
+        h2= lunch.summary
+        p= lunch.description
