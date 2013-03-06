@@ -2,7 +2,6 @@
 (function() {
 
   $(function() {
-    console.log("foo");
     return $('h2').click(function() {
       return $(this).closest('.entry').find('p').toggleClass("active");
     });
