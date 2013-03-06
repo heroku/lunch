@@ -34,4 +34,9 @@ app.get "/", (req, res) ->
       res.render "lunches.jade", {lunches: lunches}
   )
 
+app.get "/lunches.json", (req, res) ->
+  ohiru.getLunches((lunches)->
+    res.send(lunches)
+  )
+
 module.exports = app
