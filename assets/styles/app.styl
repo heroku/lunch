@@ -23,6 +23,12 @@ horizontal-line()
   background-repeat no-repeat
   background-size 100% 1px
 
+helvetica-neue-font-stack()
+  font-family "helvetica neue", helvetica, arial, geneva, sans-serif
+
+proxima-nova-font-stack()
+  font-family "proxima-nova", "helvetica neue", helvetica, arial, geneva, sans-serif
+
 *
   -moz-box-sizing border-box
   -webkit-box-sizing border-box
@@ -30,7 +36,8 @@ horizontal-line()
 
 body
   box-reset()
-  font-family "helvetica neue", helvetica, arial, geneva, sans-serif
+
+  helvetica-neue-font-stack()
   font-size 16px
 
 .header
@@ -59,8 +66,8 @@ body
   h1
     padding-top 88px
 
+    proxima-nova-font-stack()
     background url("/images/logo.png") center top no-repeat
-    font-family "Proxima Nova"
     font-size 1.625em
     letter-spacing 6px
 
@@ -76,9 +83,9 @@ body
   top 12px
 
   border-radius(1000px)
+  proxima-nova-font-stack()
   border 2px solid rgba(255, 255, 255, 0.5)
   color rgba(255, 255, 255, 0.5)
-  font-family "Proxima Nova"
   font-size 0.875em
   font-weight bold
   padding 6px 10px
@@ -113,8 +120,8 @@ body
     margin 18px 40px 0 0
     width 100px
 
+    proxima-nova-font-stack()
     color #554ea6
-    font-family "Proxima Nova"
     font-size 1em
     font-weight normal
 
