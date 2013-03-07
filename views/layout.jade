@@ -23,3 +23,6 @@ html(lang="en")
 
     .content
       != body
+
+      p.cli
+        | heroku plugins:install https://github.com/max/heroku-lunch.git && heroku lunch

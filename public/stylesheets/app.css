@@ -77,12 +77,24 @@ body {
   max-width: 760px;
   margin: 0 auto;
   position: relative;
-  background: #fff;
+}
+p.cli {
+  font-family: monaco, Consolas, "Liberation Mono", Courier, monospace;
+  text-align: center;
+  color: #666;
+  font-size: 0.8em;
+  padding-top: 20px;
+}
+@media (max-width: 480px) {
+  p.cli {
+    display: none;
+  }
 }
 .lunches {
   margin: 0;
   padding: 0;
   padding: 40px auto;
+  background: #fff;
   list-style: none;
 }
 .lunches li {

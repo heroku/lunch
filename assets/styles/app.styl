@@ -29,6 +29,9 @@ helvetica-neue-font-stack()
 proxima-nova-font-stack()
   font-family "proxima-nova", "helvetica neue", helvetica, arial, geneva, sans-serif
 
+monospace-font-stack()
+  font-family monaco,Consolas,"Liberation Mono",Courier,monospace
+
 *
   -moz-box-sizing border-box
   -webkit-box-sizing border-box
@@ -103,11 +106,20 @@ body
   max-width 760px
   margin 0 auto
   position relative
-  background white
+
+p.cli
+  monospace-font-stack()
+  text-align center
+  color #666
+  font-size .8em
+  padding-top 20px
+  @media (max-width: 480px)
+    display none
 
 .lunches
   box-reset()
   padding 40px auto
+  background white
 
   list-style none
 
