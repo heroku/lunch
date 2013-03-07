@@ -36,9 +36,9 @@ proxima-nova-font-stack()
 
 body
   box-reset()
-
   helvetica-neue-font-stack()
   font-size 16px
+  background black
 
 .header
   padding 80px 0
@@ -58,6 +58,9 @@ body
   -webkit-font-smoothing antialiased
   text-align center
   text-shadow 0 1px 0 rgba(0, 0, 0, 0.75)
+
+  @media (max-width: 480px)
+    display none
 
   h1,
   h2
@@ -96,10 +99,15 @@ body
     border-color white
     color white
 
+.content
+  max-width 760px
+  margin 0 auto
+  position relative
+  background white
+
 .lunches
   box-reset()
-  margin 40px auto
-  width 840px
+  padding 40px auto
 
   list-style none
 
@@ -117,7 +125,7 @@ body
   .date
     box-reset()
     float left
-    margin 18px 40px 0 0
+    margin 10px 40px 0 0
     width 100px
 
     proxima-nova-font-stack()
@@ -127,20 +135,31 @@ body
 
   .entry
     float left
-    width 660px
+    max-width 560px
+    @media (max-width: 480px)
+      float none
+      clear both
 
   .summary
     box-reset()
 
     color #8b8b8b
-    font-size 2.25em
+    font-size 1.8em
     font-weight 300
+    cursor pointer
 
   .description
-    display none
-
+    transition all 0.3s
+    -moz-transition all 0.3s
+    -webkit-transition all 0.3s
+    display block
+    height 0
+    margin 0
+    padding 0
+    overflow hidden
     &.active
-      display block
+      height 140px
+      padding 10px 0
 
   .active .summary
     color black

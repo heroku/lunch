@@ -3,7 +3,7 @@
 
   $(function() {
     return $('h2').click(function() {
-      return $(this).closest('.entry').find('p').toggleClass("active");
+      return $(this).closest('.entry').find('.description').toggleClass("active");
     });
   });
 

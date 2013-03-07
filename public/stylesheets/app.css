@@ -8,6 +8,7 @@ body {
   padding: 0;
   font-family: "helvetica neue", helvetica, arial, geneva, sans-serif;
   font-size: 16px;
+  background: #000;
 }
 .header {
   padding: 80px 0;
@@ -26,6 +27,11 @@ body {
   -webkit-font-smoothing: antialiased;
   text-align: center;
   text-shadow: 0 1px 0 rgba(0,0,0,0.75);
+}
+@media (max-width: 480px) {
+  .header {
+    display: none;
+  }
 }
 .header h1,
 .header h2 {
@@ -67,11 +73,16 @@ body {
   border-color: #fff;
   color: #fff;
 }
+.content {
+  max-width: 760px;
+  margin: 0 auto;
+  position: relative;
+  background: #fff;
+}
 .lunches {
   margin: 0;
   padding: 0;
-  margin: 40px auto;
-  width: 840px;
+  padding: 40px auto;
   list-style: none;
 }
 .lunches li {
@@ -94,7 +105,7 @@ body {
   margin: 0;
   padding: 0;
   float: left;
-  margin: 18px 40px 0 0;
+  margin: 10px 40px 0 0;
   width: 100px;
   font-family: "proxima-nova", "helvetica neue", helvetica, arial, geneva, sans-serif;
   color: #554ea6;
@@ -103,20 +114,38 @@ body {
 }
 .lunches .entry {
   float: left;
-  width: 660px;
+  max-width: 560px;
+}
+@media (max-width: 480px) {
+  .lunches .entry {
+    float: none;
+    clear: both;
+  }
 }
 .lunches .summary {
   margin: 0;
   padding: 0;
   color: #8b8b8b;
-  font-size: 2.25em;
+  font-size: 1.8em;
   font-weight: 300;
+  cursor: pointer;
 }
 .lunches .description {
-  display: none;
+  -moz-transition: all;
+  -o-transition: all;
+  -webkit-transition: all;
+  transition: all;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  display: block;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 .lunches .description.active {
-  display: block;
+  height: 140px;
+  padding: 10px 0;
 }
 .lunches .active .summary {
   color: #000;
