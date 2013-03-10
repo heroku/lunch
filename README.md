@@ -11,7 +11,7 @@ curl -H 'Accept: application/json' http://lunch.herokai.com
 ## Dev
 
 Lunch requires the environment variable `CALENDAR_URL` to be set to your lunch
-calendar iCal feed.
+**public** iCal feed.
 
 ```sh
 npm install
