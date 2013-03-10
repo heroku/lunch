@@ -124,14 +124,16 @@ body
 
   .description
     box-reset()
-    display none
-    margin-top 15px
+    display block
+    height 0
     overflow hidden
 
     line-height: 1.4em
+    transition(all 0.3s)
 
     &.active
-      display block
+      height auto
+      padding 10px 0
 
   .active .summary
     color black
