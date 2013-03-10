@@ -11,7 +11,7 @@ body {
   font-size: 16px;
 }
 .header {
-  padding: 80px 0;
+  padding: 40px 0;
   position: relative;
   background-attachement: fixed;
   background-color: #000;
@@ -74,30 +74,14 @@ body {
   color: #fff;
 }
 .content {
-  max-width: 760px;
   margin: 0 auto;
-  position: relative;
-}
-.cli {
-  padding: 20px 0;
-  text-align: center;
-}
-.cli code {
-  padding-top: 20px;
-  font-family: monaco, consolas, "liberation mono", Courier, monospace;
-  color: #6d6b81;
-  font-size: 0.8em;
-}
-@media (max-width: 480px) {
-  .cli {
-    display: none;
-  }
+  max-width: 900px;
 }
 .lunches {
   margin: 0;
   padding: 0;
-  padding: 40px auto;
   background: #fff;
+  padding: 20px 40px;
   list-style: none;
 }
 .lunches li {
@@ -134,7 +118,6 @@ body {
 @media (max-width: 480px) {
   .lunches .entry {
     float: none;
-    clear: both;
   }
 }
 .lunches .summary {
@@ -165,4 +148,19 @@ body {
 .lunches .active .summary {
   color: #000;
   font-weight: 500;
+}
+.cli {
+  padding: 20px 0;
+  text-align: center;
+}
+.cli code {
+  padding-top: 20px;
+  font-family: monaco, consolas, "liberation mono", Courier, monospace;
+  color: #6d6b81;
+  font-size: 0.8em;
+}
+@media (max-width: 650px) {
+  .cli {
+    display: none;
+  }
 }

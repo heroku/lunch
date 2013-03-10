@@ -12,7 +12,7 @@ body
   font-size 16px
 
 .header
-  padding 80px 0
+  padding 40px 0
   position relative
 
   background-attachement fixed
@@ -71,30 +71,13 @@ body
     color white
 
 .content
-  max-width 760px
   margin 0 auto
-  position relative
-
-
-.cli
-  padding: 20px 0
-
-  text-align center
-
-  code
-    padding-top 20px
-
-    monospace-font-stack()
-    color #6D6B81
-    font-size .8em
-
-  @media (max-width: 480px)
-    display none
+  max-width 900px
 
 .lunches
   box-reset()
-  padding 40px auto
   background white
+  padding 20px 40px
 
   list-style none
 
@@ -123,9 +106,9 @@ body
   .entry
     float left
     max-width 560px
+
     @media (max-width: 480px)
       float none
-      clear both
 
   .summary
     box-reset()
@@ -152,3 +135,18 @@ body
   .active .summary
     color black
     font-weight 500
+
+.cli
+  padding: 20px 0
+
+  text-align center
+
+  code
+    padding-top 20px
+
+    monospace-font-stack()
+    color #6D6B81
+    font-size 0.8em
+
+  @media (max-width: 650px)
+    display none
