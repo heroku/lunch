@@ -11,7 +11,7 @@ Date::getDayOfYear = ->
 class Ohiru
 
   constructor: ->
-    @lunchUrl = "http://www.google.com/calendar/ical/heroku.com_u7jak60ob03hhe8h79mdncs2a0%40group.calendar.google.com/public/basic.ics"
+    @lunchUrl = process.env.CALENDAR_URL
 
   getLunches: (cb) ->
     ical.fromURL @lunchUrl, {}, (err, data) ->
