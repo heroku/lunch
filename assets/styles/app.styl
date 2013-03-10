@@ -8,8 +8,8 @@
 body
   box-reset()
   helvetica-neue-font-stack()
-  font-size 16px
   background black
+  font-size 16px
 
 .header
   padding 80px 0
@@ -75,12 +75,19 @@ body
   margin 0 auto
   position relative
 
-p.cli
-  monospace-font-stack()
+
+.cli
+  padding: 20px 0
+
   text-align center
-  color #666
-  font-size .8em
-  padding-top 20px
+
+  code
+    padding-top 20px
+
+    monospace-font-stack()
+    color #6D6B81
+    font-size .8em
+
   @media (max-width: 480px)
     display none
 
@@ -109,7 +116,7 @@ p.cli
     width 100px
 
     proxima-nova-font-stack()
-    color #554ea6
+    color #554EA6
     font-size 1em
     font-weight normal
 
@@ -123,7 +130,7 @@ p.cli
   .summary
     box-reset()
 
-    color #8b8b8b
+    color #8B8B8B
     font-size 1.8em
     font-weight 300
     cursor pointer
@@ -137,6 +144,7 @@ p.cli
     margin 0
     padding 0
     overflow hidden
+
     &.active
       height 140px
       padding 10px 0

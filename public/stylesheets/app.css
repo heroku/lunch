@@ -7,8 +7,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "helvetica neue", helvetica, arial, geneva, sans-serif;
-  font-size: 16px;
   background: #000;
+  font-size: 16px;
 }
 .header {
   padding: 80px 0;
@@ -78,15 +78,18 @@ body {
   margin: 0 auto;
   position: relative;
 }
-p.cli {
-  font-family: monaco, consolas, "liberation mono", Courier, monospace;
+.cli {
+  padding: 20px 0;
   text-align: center;
-  color: #666;
-  font-size: 0.8em;
+}
+.cli code {
   padding-top: 20px;
+  font-family: monaco, consolas, "liberation mono", Courier, monospace;
+  color: #6d6b81;
+  font-size: 0.8em;
 }
 @media (max-width: 480px) {
-  p.cli {
+  .cli {
     display: none;
   }
 }
