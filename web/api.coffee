@@ -6,7 +6,8 @@ nib      = require("nib")
 qs       = require("querystring")
 url      = require("url")
 util     = require("util")
-moment   = require('moment')
+moment   = require("moment")
+marked   = require("../lib/marked").init()
 ohiru    = require("../lib/ohiru").init()
 
 app = express.createServer(
@@ -24,7 +25,8 @@ app = express.createServer(
 app.helpers
   params: (params) ->
     require("querystring").stringify(params)
-  moment: require('moment')
+  moment: moment
+  marked: marked
 
 app.get "/", (req, res) ->
   ohiru.getLunches((lunches)->
