@@ -79,7 +79,7 @@ body {
   position: relative;
 }
 p.cli {
-  font-family: monaco, Consolas, "Liberation Mono", Courier, monospace;
+  font-family: monaco, consolas, "liberation mono", Courier, monospace;
   text-align: center;
   color: #666;
   font-size: 0.8em;

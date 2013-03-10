@@ -1,0 +1,33 @@
+box-reset()
+  margin 0
+  padding 0
+
+border-radius(radius)
+  -moz-border-radius radius
+  -webkit-border-radius radius
+  border-radius radius
+
+transition(transition)
+  -moz-transition transition
+  -o-transition transition
+  -webkit-transition transition
+  transition transition
+
+horizontal-line()
+  background-image -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, white), color-stop(10%, #d2d2d2), color-stop(90%, #d2d2d2), color-stop(100%, white))
+  background-image -webkit-linear-gradient(left, white, #d2d2d2 10%, #d2d2d2 90%, white)
+  background-image -moz-linear-gradient(left, white, #d2d2d2 10%, #d2d2d2 90%, white)
+  background-image -o-linear-gradient(left, white, #d2d2d2 10%, #d2d2d2 90%, white)
+  background-image linear-gradient(left, white, #d2d2d2 10%, #d2d2d2 90%, white)
+  background-position bottom center
+  background-repeat no-repeat
+  background-size 100% 1px
+
+helvetica-neue-font-stack()
+  font-family "helvetica neue", helvetica, arial, geneva, sans-serif
+
+proxima-nova-font-stack()
+  font-family "proxima-nova", "helvetica neue", helvetica, arial, geneva, sans-serif
+
+monospace-font-stack()
+  font-family monaco, consolas , "liberation mono", Courier, monospace
