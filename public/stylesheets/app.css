@@ -135,18 +135,13 @@ body {
 .lunches .description {
   margin: 0;
   padding: 0;
-  display: block;
-  height: 0;
+  display: none;
+  margin-top: 15px;
   overflow: hidden;
   line-height: 1.4em;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
 }
 .lunches .description.active {
-  height: auto;
-  padding: 10px 0;
+  display: block;
 }
 .lunches .active .summary {
   color: #000;
