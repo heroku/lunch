@@ -30,9 +30,6 @@ body
   text-align center
   text-shadow 0 1px 0 rgba(0, 0, 0, 0.75)
 
-  @media (max-width: 480px)
-    display none
-
   h1,
   h2
     text-transform uppercase
@@ -49,6 +46,12 @@ body
     font-size 1em
     font-weight normal
     letter-spacing 6px
+
+  @media (max-width: 520px)
+    padding 10px 0
+
+    h2
+      display none
 
 .suggestions
   float right
@@ -108,6 +111,7 @@ body
     max-width 560px
 
     @media (max-width: 480px)
+      clear both
       float none
 
   .summary
@@ -137,7 +141,7 @@ body
     font-weight 500
 
 .cli
-  padding: 20px 0
+  padding 20px 0
 
   text-align center
 

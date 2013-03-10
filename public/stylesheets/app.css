@@ -28,11 +28,6 @@ body {
   text-align: center;
   text-shadow: 0 1px 0 rgba(0,0,0,0.75);
 }
-@media (max-width: 480px) {
-  .header {
-    display: none;
-  }
-}
 .header h1,
 .header h2 {
   text-transform: uppercase;
@@ -48,6 +43,14 @@ body {
   font-size: 1em;
   font-weight: normal;
   letter-spacing: 6px;
+}
+@media (max-width: 520px) {
+  .header {
+    padding: 10px 0;
+  }
+  .header h2 {
+    display: none;
+  }
 }
 .suggestions {
   float: right;
@@ -117,6 +120,7 @@ body {
 }
 @media (max-width: 480px) {
   .lunches .entry {
+    clear: both;
     float: none;
   }
 }
