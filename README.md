@@ -1,11 +1,11 @@
 # Ohiru
 
 What's for lunch at Heroku this week? Find out at
-[lunch.herokuapp.com](http://lunch.herokuapp.com) or use the
-[API](http://lunch.herokuapp.com/lunches.json):
+[lunch.herokai.com](http://lunch.herokai.com) or use the
+[API](http://lunch.herokai.com/lunches.json):
 
 ```sh
-curl -H 'Accept: application/json' http://lunch.herokuapp.com
+curl -H 'Accept: application/json' http://lunch.herokai.com
 ```
 
 ## Dev
