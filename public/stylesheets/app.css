@@ -93,7 +93,7 @@ body {
     padding: 0;
   }
 }
-.lunches li {
+.lunches > li {
   overflow: hidden;
   padding: 20px 20px 21px;
   background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #fff), color-stop(10%, #d2d2d2), color-stop(90%, #d2d2d2), color-stop(100%, #fff));
@@ -105,7 +105,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 1px;
 }
-.lunches li:last-child {
+.lunches > li:last-child {
   padding-bottom: 20px;
   background-image: none;
 }
@@ -158,6 +158,9 @@ body {
 .lunches .active .summary {
   color: #000;
   font-weight: 500;
+}
+.lunches ul {
+  list-style-type: disc;
 }
 .cli {
   padding: 20px 0;
