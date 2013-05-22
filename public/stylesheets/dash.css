@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 10px 10px 10px 10px;
+  font-family: "helvetica neue", helvetica, arial, geneva, sans-serif;
+  background: #333;
+  color: rgb(194, 189, 189);
+  font-size: 16px;
+}
+
+.title {
+  text-align: center;
+}
+
+.lunches h3 {
+  font-size: 1.0em;
+}
+
+.lunches {
+  list-style: none;
+  padding: 0px 5px 0px 5px;
+}
+
+.lunches .active {
+  color: #FFF;
+  font-weight: 500;
+}

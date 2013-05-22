@@ -1,0 +1,18 @@
+html(lang="en")
+  head
+    title Lunch
+
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+
+    link(rel="stylesheet", href="/stylesheets/dash.css")
+
+  body
+    h1.title Ohiru | Lunch
+
+    .content
+      ul.lunches
+        each lunch in lunches
+          li(class=(lunch.today ? "active" : ""))
+            h3= moment(lunch.date).format('M/D')
+              span : 
+              span= lunch.summary
