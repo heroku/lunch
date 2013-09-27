@@ -36,6 +36,11 @@ app.get "/", (req, res) ->
       res.render "lunches.jade", {lunches: lunches}
   )
 
+app.get "/dash", (req, res) ->
+  ohiru.getLunches((lunches)->
+    res.render "dash.jade", {layout: false, lunches: lunches}
+  )
+
 app.get "/lunches.json", (req, res) ->
   ohiru.getLunches((lunches)->
     res.send(lunches)
